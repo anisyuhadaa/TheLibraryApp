@@ -1,0 +1,130 @@
+<ion-app>
+
+  <ion-header [translucent]="true" >
+    <ion-toolbar class="l">
+      <ion-title ><b> NOVEL</b></ion-title>
+      <ion-button slot="end" fill="clear" [routerLink]="['/aboutus']">
+        <ion-icon color="light" slot="end" name="information-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true">
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div> <img src="assets/nvl/spin.jpg" [routerLink]="['/silver']"></div>
+        </ion-col>
+        <ion-col>
+          <div><strong>
+            SPINNING SILVER</strong>
+            <p>Miryem is the daughter and granddaughter of moneylenders, but her father's </p>
+          </div>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col>
+          <div> <img src="assets/nvl/rm.jpg" [routerLink]="['/rm1']"></div>
+        </ion-col>
+        <ion-col>
+          <div><strong>REMARRIED EMPRESS</strong>
+            <p>Navier was the perfect empress, however, the Emperor wanted a wife, not a colleague. </p>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <div> <img src="assets/nvl/crown.jpg" [routerLink]="['/crown']"> </div>
+        </ion-col>
+        <ion-col>
+          <div><strong>GROWN</strong>
+            <p>Who killed Korey Fields?Before there was a dead body, Enchanted’s dreams had turned into.... </p>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <div> <img src="assets/nvl/dark.jpg" [routerLink]="['/dark']"> </div>
+        </ion-col>
+        <ion-col>
+          <div><strong>DARK RISE</strong>
+            <p>The ancient world of magic is no more. Its heroes are dead, its halls are ruins, and its great.... </p>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <div> <img src="assets/nvl/pot.jpg" [routerLink]="['/portrait']"> </div>
+        </ion-col>
+        <ion-col>
+          <div><strong>Portrait of a Scotsman</strong>
+            <p>London banking heiress Hattie Greenfield wanted "just" three things in life:</p>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div> <img src="assets/nvl/the.jpg" [routerLink]="['/the']"> </div>
+        </ion-col>
+        <ion-col>
+          <div><strong>The Last Chance Library</strong>
+            <p>June Jones emerges from her shell to fight for her beloved local library, and...</p>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div> <img src="assets/nvl/lake.jpg" [routerLink]="['/lake']"> </div>
+        </ion-col>
+        <ion-col>
+          <div><strong>Lakesedge</strong>
+            <p>When Violeta Graceling arrives at haunted Lakesedge estate, she expects to find a monster.</p>
+          </div>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+
+  </ion-content>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-router-outlet>
+        <ion-tabs>
+          <ion-tab-bar slot="bottom" mode="ios">
+            <ion-tab-button tab="home" [routerLink]="['/home']">
+              <ion-label>Discover</ion-label>
+              <ion-icon name="rocket-outline"></ion-icon>
+            </ion-tab-button>
+            <ion-tab-button tab="search" [routerLink]="['/search']">
+              <ion-label>Search</ion-label>
+              <ion-icon name="search-outline"></ion-icon>
+            </ion-tab-button>
+            <ion-tab-button tab="book" [routerLink]="['/novel']">
+              <ion-label color="purple">Novel</ion-label>
+              <ion-icon name="book" color="purple"></ion-icon>
+            </ion-tab-button>
+
+            <ion-tab-button tab="menu" [routerLink]="['/menu']">
+              <ion-label>Webtoon</ion-label>
+              <ion-icon name="color-wand-outline"></ion-icon>
+            </ion-tab-button>
+
+            <ion-tab-button tab="genre" [routerLink]="['/genre']">
+              <ion-label>Genre</ion-label>
+              <ion-icon name="grid-outline"></ion-icon>
+            </ion-tab-button>
+          </ion-tab-bar>
+        </ion-tabs>
+      </ion-router-outlet>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-app>

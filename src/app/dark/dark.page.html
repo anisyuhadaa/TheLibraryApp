@@ -1,0 +1,99 @@
+
+  <ion-header>
+    <ion-toolbar class="l">
+      <ion-title>NOVEL</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <br>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div><img src="assets/nvl/dark.jpg"></div>
+        </ion-col>
+        <ion-col>
+          <div><strong class="ion-text-center">DARK RISE</strong>
+            <p>
+              by C.S. Pacat  <br><br>
+              Status:Ongoing<br> <br>
+              <ion-button  [routerLink]="['/dark1']" fill="clear" shape="round" size="5">
+                Read</ion-button>
+            </p>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-card>
+        <ion-row>
+          <ion-col size="5" class="ion-text-center"> Rating </ion-col>
+          <ion-col >
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning" ></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star"color="warning" > </ion-icon>
+            <ion-icon name="star-half"color="warning" ></ion-icon> &nbsp; 4.8 <br>
+            
+          </ion-col>
+          <ion-col size="12" class="ion-text-center">
+            <i>by goodreads.com </i>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+      <ion-row>
+        <ion-col size="3"><h6>  <b>Genre:</b> </h6></ion-col>
+        <ion-col >
+          <ion-badge color="primary" [routerLink]="['/genre1']">Fantasy</ion-badge> 
+          <ion-badge color="dark" >Young adult</ion-badge> 
+          <ion-badge color="secondary">Fiction</ion-badge> <br> </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>
+            <p> <b> Summary </b> </p>
+            <p>
+            The ancient world of magic is no more. Its heroes are dead, its halls are ruins, and its great battles between Light and Dark are
+            forgotten. Only the Stewards remember, and they keep their centuries-long vigil, sworn to protect humanity if the Dark King ever 
+            returns.</p>
+            <p>
+            Sixteen-year-old dock boy Will is on the run, pursued by the men who killed his mother. When an old servant tells him of his destiny
+            to fight beside the Stewards, Will is ushered into a world of magic, where he must train to play a vital role in the oncoming battle
+            against the Dark.</p>
+             <p>
+            As London is threatened by the Dark King’s return, the reborn heroes and villains of a long-forgotten war begin to draw battle lines. 
+            But as the young descendants of Light and Dark step into their destined roles, old allegiances, old enmities and old flames are awakened.
+            Will must stand with the last heroes of the Light to prevent the fate that destroyed their world from returning to destroy his own.
+            </p>
+          </div>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-list>
+      <ion-list-header>
+        <ion-label>CHAPTERS</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>PROLOGUE</ion-label><ion-button fill="clear" [routerLink]="['/dark1']">
+          <ion-icon slot="start" name="chevron-forward"></ion-icon>
+        </ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-label>CHAPTER 1</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>CHAPTER 2</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>CHAPTER 3</ion-label>
+      </ion-item>
+    </ion-list>
+    
+  </ion-content>

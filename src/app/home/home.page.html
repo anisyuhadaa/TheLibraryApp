@@ -1,0 +1,150 @@
+<ion-app>
+
+  <ion-header [translucent]="true">
+    <ion-toolbar class="l">
+      
+      <ion-title><b> DISCOVER</b></ion-title> 
+        
+       <ion-button slot="end" fill="clear" [routerLink]="['/profile']">
+         <ion-icon color="light" slot="end" name="person-circle-outline"></ion-icon>
+       </ion-button>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content color="light">
+     
+    <ion-card class="rest">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <ion-button [routerLink]="['/novel']" class="bu">
+              <ion-icon name="book"></ion-icon>
+            </ion-button>
+            <ion-label> NOVEL</ion-label>
+          </ion-col>
+
+          <ion-col class="ion-text-center">
+            <ion-button [routerLink]="['/menu']" class="bu">
+              <ion-icon name="color-wand"></ion-icon>
+            </ion-button>
+            <ion-label>WEBTOON</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+
+    <div style="width: 93%; border-top: 1px solid #d4d4d4; margin-left: 10px;  ">
+    </div>
+    <h4> &nbsp; Recomended, Romance</h4>
+    <ion-card>
+      <ion-slides>
+        <ion-slide [routerLink]="['/portrait']">
+          <img src="assets/nvl/pot.jpg" />
+          <ion-card-subtitle>
+            <ion-icon name="book-outline"></ion-icon>Portrait of a Scotsman
+          </ion-card-subtitle>
+        </ion-slide>
+
+        <ion-slide [routerLink]="['/sdap']">
+          <img src="assets/web/sudden.jpg">
+          <ion-card-subtitle>
+            <ion-icon name="color-wand-outline"></ion-icon> &nbsp; Suddenly Becoming a princess
+          </ion-card-subtitle>
+        </ion-slide>
+
+        <ion-slide [routerLink]="['/lady']">
+          <img src="assets/web/lady.jpg">
+          <ion-card-subtitle>
+            <ion-icon name="color-wand-outline"></ion-icon> &nbsp; The lady and her Butler
+          </ion-card-subtitle>
+        </ion-slide>
+      </ion-slides>
+    </ion-card>
+    <div style="width: 93%; border-top: 1px solid #d4d4d4; margin-left: 10px;  ">
+    </div>
+    <ion-card class="more">
+      <ion-card-content class="ion-text-center">
+        More On Genre
+        <ion-button [routerLink]="['/genre']" class="bu" expand="block">
+          <ion-icon name="albums-outline"></ion-icon>
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+    <div style="width: 93%; border-top: 1px solid #d4d4d4; margin-left: 10px;  ">
+    </div>
+    <h4> &nbsp; If you like Adventure</h4>
+    <ion-card>
+      <ion-slides>
+        <ion-slide [routerLink]="['/tbate']">
+          <img src="assets/web/begi.jpg" />
+          <ion-card-subtitle>
+            <ion-icon name="color-wand-outline"></ion-icon> The Begining after the end
+          </ion-card-subtitle>
+        </ion-slide>
+
+        <ion-slide [routerLink]="['/silver']">
+          <img src="assets/nvl/spin.jpg">
+          <ion-card-subtitle>
+            <ion-icon name="book-outline"></ion-icon> &nbsp; SPINNING SILVER
+          </ion-card-subtitle>
+        </ion-slide>
+
+        <ion-slide [routerLink]="['/eleceed']">
+          <img src="assets/web/elec.JPG" />
+          <ion-card-subtitle>
+            <ion-icon name="color-wand-outline"></ion-icon> &nbsp; Eleceed
+          </ion-card-subtitle>
+        </ion-slide>
+      </ion-slides>
+    </ion-card>
+    <div style="width: 93%; border-top: 1px solid #d4d4d4; margin-left: 10px;  ">
+    </div>
+    <ion-card class="rest">
+      <ion-card-header>
+        <ion-card-subtitle class="ion-text-justify">Recommend a book to be in the library</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content class="ion-text-center">
+        <ion-button [routerLink]="['/reco']" class="l">
+          <ion-icon name="create-outline"></ion-icon>
+          click me
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+    <ion-button [routerLink]="['/wel']" expand="block" fill="clear" shape="round">
+      Log Out
+    </ion-button>
+  </ion-content>
+
+  <ion-footer>
+    <ion-toolbar >
+      <ion-router-outlet>
+        <ion-tabs >
+          <ion-tab-bar slot="bottom" mode="ios">
+            <ion-tab-button tab="home" [routerLink]="['/home']">
+              <ion-label color="purple">Discover</ion-label>
+              <ion-icon color="purple" name="rocket" ></ion-icon>
+            </ion-tab-button>
+            <ion-tab-button tab="search" [routerLink]="['/search']">
+              <ion-label>Search</ion-label>
+              <ion-icon name="search-outline" ></ion-icon>
+            </ion-tab-button>
+            <ion-tab-button tab="book" [routerLink]="['/novel']">
+              <ion-label>Novel</ion-label>
+              <ion-icon name="book-outline" ></ion-icon>
+            </ion-tab-button>
+  
+            <ion-tab-button tab="menu" [routerLink]="['/menu']">
+              <ion-label>Webtoon</ion-label>
+              <ion-icon name="color-wand-outline" ></ion-icon>
+            </ion-tab-button>
+            
+            <ion-tab-button tab="genre" [routerLink]="['/genre']">
+              <ion-label>Genre</ion-label>
+              <ion-icon name="grid-outline"></ion-icon>
+            </ion-tab-button>
+          </ion-tab-bar>
+        </ion-tabs>
+      </ion-router-outlet>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>

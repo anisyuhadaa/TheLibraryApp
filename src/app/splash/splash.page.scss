@@ -1,0 +1,19 @@
+ion-content{
+    --background: #F6F6F6;
+}
+@-webkit-keyframes fade-out{0%{opacity:1}100%{opacity:0}}@keyframes fade-out{0%{opacity:1}100%{opacity:0}}
+.container{
+    -webkit-animation:fade-out 6s ease-out both;animation:fade-out 6s ease-out both;
+    img{
+
+        height: 155px;
+        margin-top: 70%;
+    }
+}
+
+.try{
+    p{
+        color: #d4d4d4;
+        margin-top: 61%;
+    }
+}

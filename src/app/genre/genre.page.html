@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar class="l">
+    <ion-title>GENRE </ion-title><ion-button slot="end" fill="clear" [routerLink]="['/aboutus']">
+      <ion-icon color="light" slot="end" name="information-circle-outline"></ion-icon>
+    </ion-button>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card [routerLink]="['/genre1']" class="try">
+      <ion-card-header>
+        <img src="assets/fan.png">
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card [routerLink]="['/genre2']" class="try">
+      <ion-card-header>
+        <img src="assets/dr.png">
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card [routerLink]="['/genre3']" class="try">
+      <ion-card-header>
+        <img src="assets/ro.png">
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card [routerLink]="['/genre4']" class="try">
+      <ion-card-header>
+        <img src="assets/ac.png">
+      </ion-card-header>
+    </ion-card>
+
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-router-outlet>
+      <ion-tabs>
+        <ion-tab-bar slot="bottom" mode="ios">
+          <ion-tab-button tab="home" [routerLink]="['/home']">
+            <ion-label>Discover</ion-label>
+            <ion-icon name="rocket-outline"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="search" [routerLink]="['/search']">
+            <ion-label>Search</ion-label>
+            <ion-icon name="search-outline"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="book" [routerLink]="['/novel']">
+            <ion-label>Novel</ion-label>
+            <ion-icon name="book-outline"></ion-icon>
+          </ion-tab-button>
+
+          <ion-tab-button tab="menu" [routerLink]="['/menu']">
+            <ion-label>Webtoon</ion-label>
+            <ion-icon name="color-wand-outline"></ion-icon>
+          </ion-tab-button>
+
+          <ion-tab-button tab="genre" [routerLink]="['/genre']">
+            <ion-label color="purple">Genre</ion-label>
+            <ion-icon  color="purple" name="grid"></ion-icon>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-router-outlet>
+  </ion-toolbar>
+</ion-footer>

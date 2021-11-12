@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar class="l">
+    <ion-title>DETAIL</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div><img src="assets/web/sudden.jpg"></div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <strong>SUDDDENLY BECOMING A PRINCESS</strong> <br>
+          <p>Author:Plutus, Spoon <br>
+            Status:Ongoing<br>
+            <ion-button [routerLink]="['/sdapch1']" fill="clear" shape="round" size="5">
+              Read</ion-button>
+          </p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-card>
+      <ion-row>
+        <ion-col size="5" class="ion-text-center"> Rating </ion-col>
+        <ion-col >
+          <ion-icon name="star" color="warning"></ion-icon>
+          <ion-icon name="star" color="warning" ></ion-icon>
+          <ion-icon name="star" color="warning"></ion-icon>
+          <ion-icon name="star"color="warning" > </ion-icon>
+          <ion-icon name="star-half"color="warning" ></ion-icon> &nbsp; 5.8 <br>
+          
+        </ion-col>
+        <ion-col size="12" class="ion-text-center">
+          <i>by tappytoon </i>
+        
+        </ion-col>
+      </ion-row>
+    </ion-card>
+     
+    <ion-row>
+      <ion-col size="3"><h6> <b> Genre: </b> </h6></ion-col>
+      <ion-col>
+        <ion-badge color="tertiary">Shoujo</ion-badge> 
+        <ion-badge color="primary" [routerLink]="['/genre1']">Fantasy</ion-badge>
+        <ion-badge color="danger" [routerLink]="['/genre2']"> Drama</ion-badge> 
+        <ion-badge color="light">Historical</ion-badge>  <br>
+      </ion-col>
+    </ion-row>
+    
+     
+    
+    <ion-row>
+      <ion-col>
+        <div>
+          <p> <b> Summary</b> </p>
+          <p>When I opened my eyes I had become a princess! </p>
+
+          <p>But out of all characters in this romance novel, why is it the princess who has the fate of dying to her
+            own blood-related dad, the emperor!</p>
+
+          <p>If I want to live, I must not be seen by that emperor dad.</p>
+
+          <p>“When did this kind of scumbag start living in my castle?”</p>
+
+          <p>The man who doesn’t have single drop of blood nor tear to drop, that cold emperor Claude! Will
+            Atanasia who had been caught by the emperor be able to survive?</p>
+
+          <p>“I… What do I do…..?”</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>CHAPTERS</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>CHAPTER 1</ion-label>
+      <ion-button fill="clear" [routerLink]="['/sdapch1']">
+        <ion-icon slot="start" name="chevron-forward"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>CHAPTER 2</ion-label>
+      <ion-button fill="clear" [routerLink]="['/sdapch2']">
+        <ion-icon slot="start" name="chevron-forward"></ion-icon>
+      </ion-button>
+
+    </ion-item>
+    <ion-item>
+      <ion-label>CHAPTER 3</ion-label>
+    </ion-item>
+
+  </ion-list>
+  
+</ion-content>

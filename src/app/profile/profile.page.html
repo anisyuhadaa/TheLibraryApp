@@ -1,0 +1,81 @@
+<ion-app>
+  <ion-header class="ion-no-border">
+    <ion-toolbar class="hea">
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="try">
+    <ion-card class="more">
+      
+      <h2 class="ion-text-center"><b>PROFILE</b></h2>
+      <img src="assets/logo.png">
+     <br>
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12">
+            <p> <b>Username:</b> &nbsp; <i>{{user.email}} </i> </p>
+          </ion-col>
+          <ion-col size="12">
+            <p> <b>Password:</b> &nbsp; <i>{{user.password}} </i> </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card class="more"><br>
+      <ion-list>
+        <ion-list-header>
+          <ion-label>MORE</ion-label> 
+        </ion-list-header>
+        <ion-item>
+          <ion-label>About Us</ion-label>
+          <ion-button [routerLink]="['/aboutus']" color="purple" fill="outline">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-label>Recommend Us</ion-label>
+          <ion-button [routerLink]="['/reco']" color="purple" fill="outline">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-label>Frequently Ask Question</ion-label>
+          <ion-button [routerLink]="['/faq']" color="purple" fill="outline">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-router-outlet>
+        <ion-tabs>
+          <ion-tab-bar slot="bottom" mode="ios">
+            <ion-tab-button tab="home" [routerLink]="['/home']">
+              <ion-label color="purple">Discover</ion-label>
+              <ion-icon color="purple" name="rocket"></ion-icon>
+            </ion-tab-button>
+            <ion-tab-button tab="search" [routerLink]="['/search']">
+              <ion-label>Search</ion-label>
+              <ion-icon name="search-outline"></ion-icon>
+            </ion-tab-button>
+            <ion-tab-button tab="book" [routerLink]="['/novel']">
+              <ion-label>Novel</ion-label>
+              <ion-icon name="book-outline"></ion-icon>
+            </ion-tab-button>
+
+            <ion-tab-button tab="menu" [routerLink]="['/menu']">
+              <ion-label>Webtoon</ion-label>
+              <ion-icon name="color-wand-outline"></ion-icon>
+            </ion-tab-button>
+
+            <ion-tab-button tab="genre" [routerLink]="['/genre']">
+              <ion-label>Genre</ion-label>
+              <ion-icon name="grid-outline"></ion-icon>
+            </ion-tab-button>
+          </ion-tab-bar>
+        </ion-tabs>
+      </ion-router-outlet>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>

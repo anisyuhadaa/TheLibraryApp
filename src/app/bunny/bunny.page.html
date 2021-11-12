@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar class="l">
+    <ion-title>DETAIL</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div><img src="assets/web/bunn.png"></div>
+      </ion-col>
+      <ion-col>
+        <div><strong class="ion-text-center">Bunny and her Boys</strong>
+          <p>
+            Author: Nieun <br>
+            Status:Ongoing<br>
+            <ion-button (click)="presentAlert()" fill="clear" shape="round" size="5">
+              Read</ion-button>
+
+          </p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-card>
+        <ion-row>
+          <ion-col size="5" class="ion-text-center"> Rating </ion-col>
+          <ion-col>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"> </ion-icon>
+            <ion-icon name="star-half" color="warning"></ion-icon> &nbsp; 9.9 <br>
+
+          </ion-col>
+          <ion-col size="12" class="ion-text-center">
+            <i>by webtoon</i>
+
+          </ion-col>
+        </ion-row>
+      </ion-card>
+      <ion-col size="3">
+        <h6> <b> Genre: </b> </h6>
+      </ion-col>
+      <ion-col>
+        <ion-badge color="tertiary">Comedy</ion-badge>
+        <ion-badge color="success">Slice Of Life</ion-badge>
+        <ion-badge color="warning">School Life</ion-badge>
+        <ion-badge color="primary" [routerLink]="['/genre2']">Drama</ion-badge>
+        <ion-badge color="danger" [routerLink]="['/genre3']"> Romance</ion-badge>
+        <ion-badge color="light" [routerLink]="['/menu']">Webtoons</ion-badge>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+          <p> <b> Summary</b></p>
+          <p>
+            "I don't care about a guy's appearance in the slightest." <br>
+
+            Bunny, as a freshman in university, experiences the worst first relationship of her life. Handsome guys were
+            a no to her before,
+            but when she finally decides to accept her natural instinct of liking handsome men, 5 of them appear in her
+            life!<br>
+
+            But the question is who will turn out to be a shitty car and who will turn out to be a Mercedes-benz? Tune
+            in to find out!</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>CHAPTERS</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>CHAPTER 1</ion-label>
+      <ion-button fill="clear">
+        <ion-icon slot="start" name="chevron-forward"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-label>CHAPTER 2</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>CHAPTER 3</ion-label>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

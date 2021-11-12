@@ -1,0 +1,190 @@
+<ion-app>
+
+  <ion-header >
+    <ion-toolbar class="l">
+      <ion-buttons slot="start" [routerLink]="['/genre']">
+        <ion-icon slot="start" name="arrow-back-outline"></ion-icon> 
+      </ion-buttons>
+      <ion-title>FANTASY</ion-title>
+    </ion-toolbar>
+    <ion-toolbar >
+      <ion-segment mode="ios" value="nov"  (ionChange)="segmentChanged($event)">
+        <ion-segment-button  value="nov" layout="icon-start">
+          <ion-label> NOVEL</ion-label>
+          <ion-icon name="book-outline"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button   value="web" layout="icon-start">
+          <ion-label>WEBTOONS</ion-label>
+          <ion-icon name="color-wand-outline"></ion-icon>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content fullscreen *ngIf="selectedSegment =='nov'">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div> <img src="assets/nvl/spin.jpg" [routerLink]="['/silver']"></div>
+        </ion-col>
+        <ion-col>
+          <div><strong> SPINNING SILVER</strong>
+            <br>
+            <p>
+              <ion-badge color="light" [routerLink]="['/novel']">
+                <ion-icon name="book-outline"></ion-icon>
+              </ion-badge> /
+              <ion-badge color="success" [routerLink]="['/genre2']">Drama </ion-badge>
+              <ion-badge color="purple" [routerLink]="['/genre1']">Fantasy</ion-badge>
+              <ion-button [routerLink]="['/silver']" fill="clear" shape="round" size="5">
+                Read</ion-button>
+            </p>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div> <img src="assets/nvl/rm.jpg" [routerLink]="['/rm1']"></div>
+        </ion-col>
+        <ion-col>
+          <div><strong>REMARRIED EMPRESS</strong>
+            <p> </p>
+            <p>
+              <ion-badge color="light" [routerLink]="['/novel']">
+                <ion-icon name="book-outline"></ion-icon>
+              </ion-badge> /
+              <ion-badge color="success" [routerLink]="['/genre2']"> Drama</ion-badge>
+              <ion-badge color="purple" [routerLink]="['/genre1']">Fantasy</ion-badge>
+              <ion-badge color="danger" [routerLink]="['/genre3']">Romance </ion-badge>
+              <ion-button [routerLink]="['/rm1']" fill="clear" shape="round" size="5">
+                Read</ion-button>
+            </p>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div> <img src="assets/nvl/dark.jpg" [routerLink]="['/dark']"> </div>
+        </ion-col>
+        <ion-col>
+          <div><strong>DARK RISE</strong>
+            <p>
+              <ion-badge color="light" [routerLink]="['/novel']">
+                <ion-icon name="book-outline"></ion-icon>
+              </ion-badge> /
+              <ion-badge color="purple" [routerLink]="['/genre1']">Fantasy</ion-badge>
+              <ion-badge color="primary">Young adult</ion-badge>
+              <ion-badge color="secondary">Fiction</ion-badge>
+              <ion-button [routerLink]="['/dark']" fill="clear" shape="round" size="5">
+                Read</ion-button>
+            </p>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div> <img src="assets/nvl/lake.jpg" [routerLink]="['/lake']"></div>
+        </ion-col>
+        <ion-col>
+          <div><strong>LAKELEDGE</strong>
+            <p>
+              <ion-badge color="light" [routerLink]="['/novel']">
+                <ion-icon name="book-outline"></ion-icon>
+              </ion-badge> /
+              <ion-badge color="purple" [routerLink]="['/genre1']"> Fantasy</ion-badge>
+              <ion-badge color="danger" [routerLink]="['/genre3']">Romance,</ion-badge>
+              <ion-badge color="dark">Horror</ion-badge>
+              <ion-badge color="tertiary">Young Adult</ion-badge>
+              <ion-button [routerLink]="['/lake']" fill="clear" shape="round" size="5">
+                Read</ion-button>
+            </p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+
+  <ion-content *ngIf="selectedSegment =='web' " fullscreen>
+    <ion-grid >
+      <ion-row>
+        <ion-col>
+          <div> <img src="assets/web/sudden.jpg" [routerLink]="['/sdap']"></div>
+        </ion-col>
+        <ion-col>
+          <div><strong>Suddenly Becoming A princess</strong>
+            <p>
+              <ion-badge color="light" [routerLink]="['/menu']">
+                <ion-icon name="color-wand-outline"></ion-icon>
+              </ion-badge>
+              <ion-badge color="tertiary">Shoujo</ion-badge>
+              <ion-badge color="purple" [routerLink]="['/genre1']">Fantasy</ion-badge>
+              <ion-badge color="success" [routerLink]="['/genre2']"> Drama</ion-badge>
+              <ion-badge color="light">Historical</ion-badge>
+              <ion-button [routerLink]="['/sdap']" fill="clear" shape="round" size="5">
+                Read</ion-button>
+            </p>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div> <img src="assets/web/begi.jpg" [routerLink]="['/tbate']"></div>
+        </ion-col>
+        <ion-col>
+          <div><strong>The Begining after The End</strong>
+            <p>
+              <ion-badge color="light" [routerLink]="['/menu']">
+                <ion-icon name="color-wand-outline"></ion-icon>
+              </ion-badge>
+              <ion-badge color="secondary">Adventure</ion-badge>
+              <ion-badge color="purple" [routerLink]="['/genre1']">Fantasy</ion-badge>
+              <ion-badge color="primary"[routerLink]="['/genre4']" >Action</ion-badge>
+              <ion-badge color="danger" [routerLink]="['/genre3']"> Romance</ion-badge>
+              <ion-button [routerLink]="['/tbate']" fill="clear" shape="round" size="5">
+                Read</ion-button>
+            </p>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div> <img src="assets/web/elec.JPG" [routerLink]="['/eleceed']"></div>
+        </ion-col>
+        <ion-col>
+          <div><strong>ELECEED</strong>
+            <p>
+              <ion-badge color="light" [routerLink]="['/menu']">
+                <ion-icon name="color-wand-outline"></ion-icon>
+              </ion-badge>
+              <ion-badge color="tertiary"[routerLink]="['/genre4']" >Action</ion-badge>
+              <ion-badge color="primary" [routerLink]="['/genre1']">Adventure</ion-badge>
+              <ion-badge color="purple" [routerLink]="['/genre2']"> Fantasy</ion-badge>
+              <ion-badge color="medium">Shounen</ion-badge>
+              <ion-button [routerLink]="['/eleceed']" fill="clear" shape="round" size="5">
+                Read</ion-button>
+            </p>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div> <img src="assets/web/sl.jpg" [routerLink]="['/solo']"></div>
+        </ion-col>
+        <ion-col>
+          <div><strong>Solo Leveling</strong>
+            <p>
+              <ion-badge color="light" [routerLink]="['/menu']">
+                <ion-icon name="color-wand-outline"></ion-icon>
+              </ion-badge>
+              <ion-badge color="tertiary"[routerLink]="['/genre4']" >Action</ion-badge>
+              <ion-badge color="danger" [routerLink]="['/genre2']"> Adventure</ion-badge>
+              <ion-badge color="purple" [routerLink]="['/genre1']">Fantasy</ion-badge>
+              <ion-button [routerLink]="['/solo']" fill="clear" shape="round" size="5">
+                Read</ion-button>
+            </p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-app>

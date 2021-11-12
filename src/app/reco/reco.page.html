@@ -1,0 +1,34 @@
+<ion-app>
+
+  <ion-content class="try"><br>
+
+    
+    <ion-card class="box"><h2 class="ion-text-center"> More Books on </h2>
+      <img src="assets/ll.png">
+      <ion-list>
+        <p class="ion-padding">Recommend a book to be in the d'library 
+        <ion-item>
+          <ion-label position="floating">Title</ion-label>
+          <ion-input type="text" [(ngModel)]="post.title" required></ion-input>
+        </ion-item>
+        
+        <br>
+        <ion-item>
+          <ion-label>Category</ion-label>
+          <ion-select value="Novel" okText="Okay" [(ngModel)]="post.cate" cancelText="Dismiss">
+            <ion-select-option value="Novel">Novel</ion-select-option>
+            <ion-select-option value="Webtoon">Webtoon</ion-select-option>
+          </ion-select>
+        </ion-item> <br>
+        <ion-button [routerLink]="['/home']" color="danger" fill="outline" class="ion-text-center">
+          Cancel
+        </ion-button> &nbsp;
+        <ion-button (click)="createPost(post)" color="success" fill="outline" class="ion-text-center" >
+          Submit
+        </ion-button>
+      </p>
+      </ion-list>
+    </ion-card>
+  </ion-content>
+
+</ion-app>

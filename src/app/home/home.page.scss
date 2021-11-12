@@ -1,0 +1,58 @@
+
+ion-slides {
+  height: 50%;
+  color: var(--ion-color-step-600, #141101);
+  margin-bottom: 0;
+}
+.l{
+  --background: linear-gradient(45deg,#966B9D,#C98686);
+  color: white;
+}
+.rest{
+  background-color: white;
+  color:rgb(39, 39, 39);
+  border-radius: 28px 28px 28px 28px;
+}
+.more{
+  background-color: white;
+  color:rgb(39, 39, 39);
+  border-radius: 24px 24px 24px 24px;
+}
+.b{
+  --background: #ecddcd;
+  color:#c691db
+}
+.bu{
+  --background: linear-gradient(45deg,#966B9D,#C98686);
+    color: rgb(255, 255, 255);
+}
+.but{
+  --background: #ecddcd;
+  color:#7F5539;
+}
+.butt{
+  --background: #f5dada;
+  color: #9C6644;
+}
+.swiper-slide {
+  display: block;
+}
+
+.swiper-slide h2 {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+.swiper-slide img {
+  max-height: 89%;
+  max-width: 70%;
+  margin: 20px 0 20px;
+  margin-bottom: 0;
+  pointer-events: none;
+
+}
+.my-custom-class {
+  --background: #e5e5e5;
+  align-content: center;
+  
+}

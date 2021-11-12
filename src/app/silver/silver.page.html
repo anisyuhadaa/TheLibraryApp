@@ -1,0 +1,114 @@
+<ion-header>
+  <ion-toolbar class="l">
+    <ion-title>NOVEL</ion-title>
+    <ion-buttons slot="start" color="light" >
+      <ion-back-button>
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div ></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div><img src="assets/nvl/spin.jpg"></div>
+      </ion-col>
+      <ion-col>
+        <div><strong class="ion-text-center">SPINNING SILVER</strong>
+          <p>
+            Author:Noami Nvrik <br>
+            Status:Ongoing<br>
+            <ion-button [routerLink]="['/ch1']" fill="clear" shape="round" size="5">
+              Read</ion-button>
+          </p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-card>
+      <ion-row>
+        <ion-col size="5" class="ion-text-center"> Rating </ion-col>
+        <ion-col >
+          <ion-icon name="star" color="warning"></ion-icon>
+          <ion-icon name="star" color="warning" ></ion-icon>
+          <ion-icon name="star" color="warning"></ion-icon>
+          <ion-icon name="star"color="warning" > </ion-icon>
+          <ion-icon name="star-half"color="warning" ></ion-icon> &nbsp; 4.8 <br>
+          
+        </ion-col>
+        <ion-col size="12" class="ion-text-center">
+          <i>by goodreads.com </i>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-row>
+      <ion-col size="12"><b> Genre: </b>
+        <ion-badge color="success" [routerLink]="['/genre2']">Drama </ion-badge> 
+        <ion-badge color="danger"[routerLink]="['/genre1']" >Fantasy</ion-badge> 
+        <ion-badge color="tertiary"> Mature</ion-badge> 
+        <ion-badge color="secondary" [routerLink]="['/genre3']">Romance</ion-badge>  <br></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+          <p> Summary</p>
+          <p>
+            Miryem is the daughter and granddaughter of moneylenders, but her father's inability to collect his debts
+            has left his family
+            on the edge of poverty--until Miryem takes matters into her own hands. Hardening her heart, the young woman
+            sets out to claim
+            what is owed and soon gains a reputation for being able to turn silver into gold.
+          </p>
+          <p>
+            When an ill-advised boast draws the attention of the king of the Staryk--grim fey creatures who seem more
+            ice than flesh--Miryem's fate,
+            and that of two kingdoms, will be forever altered. Set an impossible challenge by the nameless king, Miryem
+            unwittingly spins a web that
+            draws in a peasant girl, Wanda, and the unhappy daughter of a local lord who plots to wed his child to the
+            dashing young tsar.
+          </p>
+          <p>
+            But Tsar Mirnatius is not what he seems. And the secret he hides threatens to consume the lands of humans
+            and Staryk alike. Torn between
+            deadly choices, Miryem and her two unlikely allies embark on a desperate quest that will take them to the
+            limits of sacrifice, power, and love.</p>
+          <p>
+            Channeling the vibrant heart of myth and fairy tale, Spinning Silver weaves a multilayered, magical tapestry
+            that readers will want to return
+            to again and again.</p>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>CHAPTERS</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>CHAPTER 1</ion-label>
+        <ion-icon slot="end" name="chevron-forward"></ion-icon>
+      
+    </ion-item>
+
+    <ion-item>
+      <ion-label>CHAPTER 2</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>CHAPTER 3</ion-label>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>

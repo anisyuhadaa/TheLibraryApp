@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar class="l">
+    <ion-title>DETAIL</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <br>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div><img src="assets/web/elec.JPG"></div>
+      </ion-col>
+      <ion-col>
+        <div><strong class="ion-text-center">ELECEED</strong>
+           <p> 
+           Author:Jea Ho Son <br> <br>
+           Status:Ongoing<br>
+           <ion-button  [routerLink]="['/eleceed1']" fill="clear" shape="round" size="5">
+            Read</ion-button>
+
+          </p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row><ion-card>
+        <ion-row>
+          <ion-col size="5" class="ion-text-center"> Rating </ion-col>
+          <ion-col >
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning" ></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star"color="warning" > </ion-icon>
+            <ion-icon name="star-half"color="warning" ></ion-icon> &nbsp; 9.9 <br>
+            
+          </ion-col>
+          <ion-col size="12" class="ion-text-center">
+            <i>by webtoon</i>
+          
+          </ion-col>
+        </ion-row>
+      </ion-card>
+      <ion-col size="3"><h6> <b> Genre: </b> </h6></ion-col>
+      <ion-col>
+        <ion-badge color="tertiary"[routerLink]="['/genre4']" >Action</ion-badge> 
+        <ion-badge color="primary" >Adventure</ion-badge>
+        <ion-badge color="danger" [routerLink]="['/genre1']"> Fantasy</ion-badge> 
+        <ion-badge color="light" [routerLink]="['/menu']">Webtoons</ion-badge>
+        <ion-badge color="medium">Shounen</ion-badge>  <br>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>
+           <p> <b> Summary</b></p>
+           <p>
+            Kaiden - A mysterious ability user who hides inside the body of a street cat. He is later picked up by Jiwoo after being injured 
+            after a fight with another ability user. He has a stubborn and bossy personality. Jiwoo - an energetic and talkative high school boy 
+            who loves cats. He is very kind and also seem to have a special ability.</p>
+          </div>
+        </ion-col>
+      </ion-row>
+      </ion-grid>  
+      <ion-list>
+   <ion-list-header>
+     <ion-label>CHAPTERS</ion-label> 
+   </ion-list-header>
+   <ion-item>
+    <ion-label>CHAPTER 1</ion-label> <ion-button fill="clear" [routerLink]="['/eleceed1']">
+      <ion-icon slot="start" name="chevron-forward" ></ion-icon>
+    </ion-button>
+    </ion-item>
+  <ion-item>
+    <ion-label>CHAPTER 2</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>CHAPTER 3</ion-label>
+  </ion-item>
+  
+  </ion-list>
+    
+</ion-content>

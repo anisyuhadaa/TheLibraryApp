@@ -1,0 +1,50 @@
+<ion-app>
+
+  <ion-content class="try">
+    <br><br><br>
+    <br><br>
+    <ion-card class="more"><br>
+      <ion-label class="ion-text-center">
+        <h1> <b>About Us</b></h1><img src="assets/ll.png">
+      </ion-label>&nbsp; <i>Novel and Webtoon in One Platfrom</i>
+      <p class="ion-padding"> 
+        d'Library is an Reading and Information Mobile Application for
+        user to read and find a new book to read with no payment and advertisements</p>
+
+      <div style="width: 93%; border-top: 1px solid #d4d4d4; margin-left: 10px;  ">
+      </div>
+      </ion-card>
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-router-outlet>
+        <ion-tabs>
+          <ion-tab-bar slot="bottom" mode="ios">
+            <ion-tab-button tab="home" [routerLink]="['/home']">
+              <ion-label>Discover</ion-label>
+              <ion-icon name="rocket"></ion-icon>
+            </ion-tab-button>
+            <ion-tab-button tab="search" [routerLink]="['/search']">
+              <ion-label>Search</ion-label>
+              <ion-icon name="search-outline"></ion-icon>
+            </ion-tab-button>
+            <ion-tab-button tab="book" [routerLink]="['/novel']">
+              <ion-label>Novel</ion-label>
+              <ion-icon name="book-outline"></ion-icon>
+            </ion-tab-button>
+
+            <ion-tab-button tab="menu" [routerLink]="['/menu']">
+              <ion-label>Webtoon</ion-label>
+              <ion-icon name="color-wand-outline"></ion-icon>
+            </ion-tab-button>
+
+            <ion-tab-button tab="genre" [routerLink]="['/genre']">
+              <ion-label>Genre</ion-label>
+              <ion-icon name="grid-outline"></ion-icon>
+            </ion-tab-button>
+          </ion-tab-bar>
+        </ion-tabs>
+      </ion-router-outlet>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>

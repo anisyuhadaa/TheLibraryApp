@@ -1,0 +1,52 @@
+<ion-header >
+  <ion-toolbar class="l" >
+    <ion-searchbar color="light" mode="ios" placeholder="Novel / Webtoon" [debounce]="250" [(ngModel)]="searchTerm" (ionChange)="setFilteredItems()">
+     
+    </ion-searchbar> 
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item *ngFor="let item of items" (click)="onClick(item)">
+   
+   <ion-label> {{ item.title }} </ion-label><ion-icon slot="end" name="chevron-forward" ></ion-icon>
+  
+    
+ 
+  </ion-item>
+</ion-list>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-router-outlet>
+      <ion-tabs>
+        <ion-tab-bar slot="bottom" mode="ios">
+          <ion-tab-button tab="home" [routerLink]="['/home']">
+            <ion-label>Discover</ion-label>
+            <ion-icon name="rocket-outline"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="search" [routerLink]="['/search']">
+            <ion-label color="purple" >Search</ion-label>
+            <ion-icon color="purple"  name="search-outline"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="book" [routerLink]="['/novel']">
+            <ion-label>Novel</ion-label>
+            <ion-icon name="book-outline"></ion-icon>
+          </ion-tab-button>
+
+          <ion-tab-button tab="menu" [routerLink]="['/menu']">
+            <ion-label>Webtoon</ion-label>
+            <ion-icon  name="color-wand"></ion-icon>
+          </ion-tab-button>
+
+          <ion-tab-button tab="genre" [routerLink]="['/genre']">
+            <ion-label>Genre</ion-label>
+            <ion-icon name="grid-outline"></ion-icon>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-router-outlet>
+  </ion-toolbar>
+</ion-footer>

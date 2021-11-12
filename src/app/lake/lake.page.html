@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar class="l">
+    <ion-title>NOVEL</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div><img src="assets/nvl/lake.jpg"></div>
+      </ion-col>
+      <ion-col>
+        <div><strong class="ion-text-center">LAKELEDGE</strong>
+          <p>
+            by  Lyndall Clipstone  <br><br> 
+            Status:Ongoing<br> <br>
+            <ion-button  (click)="presentAlert()" fill="clear" shape="round" size="5">
+              Read</ion-button>
+
+          </p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-card>
+      <ion-row>
+        <ion-col size="5" class="ion-text-center"> Rating </ion-col>
+        <ion-col >
+          <ion-icon name="star" color="warning"></ion-icon>
+          <ion-icon name="star" color="warning" ></ion-icon>
+          <ion-icon name="star" color="warning"></ion-icon>
+          <ion-icon name="star"color="warning" > </ion-icon>
+          <ion-icon name="star-half"color="warning" ></ion-icon> &nbsp; 4.8 <br>
+          
+        </ion-col>
+        <ion-col size="12" class="ion-text-center">
+          <i>by goodreads.com </i>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-row>
+      <ion-col size="12"> <b> Genre:</b> <ion-badge color="primary" [routerLink]="['/genre1']"> Fantasy</ion-badge> 
+       <ion-badge color="tertiary" [routerLink]="['/genre3']">Romance,</ion-badge>
+       <ion-badge color="primary" >Horror</ion-badge>
+       <ion-badge color="secondary">Young Adult</ion-badge> 
+        <br></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+          <p> <b> Summary </b> </p>
+          <p> <i> There are monsters in the world.</i></p>
+            <p>
+            When Violeta Graceling arrives at haunted Lakesedge estate, she expects to find a monster. She knows the terrifying rumors about Rowan Sylvanan, who drowned his entire family when he was a boy. But neither the estate nor the monster are what they seem.
+          </p>
+          <p> <i> There are monsters in the woods.</i> <br> </p>
+            <p> As Leta falls for Rowan, she discovers he is bound to the Lord Under, the sinister death god lurking in the black waters of the lake. A creature to whom Leta is inexplicably drawn…
+          </p>
+           <p> <i> There’s a monster in the shadows, and now it knows my name</i> <br> </p>
+            <p> Now, to save Rowan—and herself—Leta must confront the darkness in her past, including unraveling the mystery of her connection to the Lord Under.
+           </p>
+         
+          </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>CHAPTERS</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>CHAPTER 1</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>CHAPTER 2</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>CHAPTER 3</ion-label>
+    </ion-item>
+  </ion-list>
+ 
+</ion-content>

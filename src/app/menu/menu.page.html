@@ -1,0 +1,92 @@
+<ion-header >
+  <ion-toolbar class="l" >
+
+    <ion-title><b>WEBTOON</b></ion-title>
+    <ion-button slot="end" fill="clear" [routerLink]="['/aboutus']">
+      <ion-icon color="light" slot="end" name="information-circle-outline"></ion-icon>
+    </ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div><img src="assets/web/sudden.jpg" [routerLink]="['/sdap']"><br>Suddenly becoming a princess </div>
+      </ion-col>
+      <ion-col>
+        <div><img src="assets/web/begi.jpg" [routerLink]="['/tbate']"><br>The Begining after the end</div>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div><img src="assets/web/elec.JPG" [routerLink]="['/eleceed']"><br>Eleceed</div>
+      </ion-col>
+      <ion-col>
+        <div><img src="assets/web/sl.jpg" [routerLink]="['/solo']"><br>Solo Leveling </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div> <img src="assets/web/true.jpg" [routerLink]="['/truedu']"><br>True Education</div>
+      </ion-col>
+      <ion-col>
+        <div> <img src="assets/web/lady.jpg" [routerLink]="['/lady']"><br> The Lady and Butler</div>
+      </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div> <img src="assets/web/how.png" [routerLink]="['/fight']"><br>How to Fight</div>
+      </ion-col>
+      <ion-col>
+       <div> <img src="assets/web/inso.jpeg" [routerLink]="['/inso']"><br>Inso's Law</div>
+      </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div> <img src="assets/web/bunn.png" [routerLink]="['/bunny']"><br> Bunny and Her Boys</div>
+      </ion-col>
+      <ion-col>
+        <div> <img src="assets/web/mec.jpg" [routerLink]="['/mec']"><br> Mecenery Enrollment </div>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-router-outlet>
+      <ion-tabs>
+        <ion-tab-bar slot="bottom" mode="ios">
+          <ion-tab-button tab="home" [routerLink]="['/home']">
+            <ion-label>Discover</ion-label>
+            <ion-icon name="rocket-outline"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="search" [routerLink]="['/search']">
+            <ion-label>Search</ion-label>
+            <ion-icon name="search-outline"></ion-icon>
+          </ion-tab-button>
+          <ion-tab-button tab="book" [routerLink]="['/novel']">
+            <ion-label>Novel</ion-label>
+            <ion-icon name="book-outline"></ion-icon>
+          </ion-tab-button>
+
+          <ion-tab-button tab="menu" [routerLink]="['/menu']">
+            <ion-label color="purple">Webtoon</ion-label>
+            <ion-icon color="purple" name="color-wand"></ion-icon>
+          </ion-tab-button>
+
+          <ion-tab-button tab="genre" [routerLink]="['/genre']">
+            <ion-label>Genre</ion-label>
+            <ion-icon name="grid-outline"></ion-icon>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-router-outlet>
+  </ion-toolbar>
+</ion-footer>
